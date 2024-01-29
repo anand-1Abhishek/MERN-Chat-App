@@ -6,7 +6,7 @@ import { useToast } from "@chakra-ui/toast";
 import axios from "axios";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-
+axios.defaults.baseURL = "https://chat-app-backend-2jwp.onrender.com"
 const Signup = () => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);

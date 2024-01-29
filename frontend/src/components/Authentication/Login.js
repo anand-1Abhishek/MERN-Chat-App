@@ -7,7 +7,7 @@ import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
 import { ChatState } from "../../Context/ChatProvider";
-
+axios.defaults.baseURL = "https://chat-app-backend-2jwp.onrender.com"
 const Login = () => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);

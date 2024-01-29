@@ -18,7 +18,7 @@ import {
   import { ChatState } from "../../Context/ChatProvider";
   import UserBadgeItem from "../userAvatar/UserBadgeItem";
   import UserListItem from "../userAvatar/UserListItem";
-  
+  axios.defaults.baseURL = "https://chat-app-backend-2jwp.onrender.com"
   const GroupChatModal = ({ children }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [groupChatName, setGroupChatName] = useState();
